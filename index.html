@@ -3,7 +3,319 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/dist/css/style.min.css" />
 		<title>Clone di Netflix</title>
 	</head>
-	<body></body>
+	<body class="bg-dark text-white">
+		<header class="container-fluid p-0">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between py-3 row">
+					<!-- @note mx4 mi definisce la larghezza dal bordo per tutti i container -->
+					<!-- struttura -->
+					<div
+						class="d-flex align-items-center justify-content-center justify-content-sm-start col-12 col-sm-8"
+					>
+						<!-- div del logo e navbar, a sinistra -->
+						<img
+							src="/assets/netflix_logo.png"
+							alt="Netflix logo"
+							id="logoNetflix"
+						/>
+						<nav>
+							<ul class="nav navbar-dark">
+								<li class="d-none d-md-block">
+									<a href="#" class="text-decoration-none text-white ms-2"
+										>Home</a
+									>
+								</li>
+								<li class="d-none d-md-block">
+									<a href="#" class="text-decoration-none text-white ms-5"
+										>TV Shows</a
+									>
+								</li>
+								<li class="d-none d-lg-block">
+									<a href="#" class="text-decoration-none text-white ms-5"
+										>Movies</a
+									>
+								</li>
+								<li class="d-none d-xl-block">
+									<a href="#" class="text-decoration-none text-white ms-5"
+										>Recently Added</a
+									>
+								</li>
+								<li class="d-none d-xl-block">
+									<a href="#" class="text-decoration-none text-white ms-5"
+										>My List</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div
+						class="d-flex justify-content-center justify-content-sm-end text-white align-items-center col-12 mt-3 mt-sm-0 col-sm-4"
+					>
+						<i class="bi bi-search mx-4 fs-4"></i>
+						<a
+							href="#"
+							class="d-none d-sm-block mb-0 mx-4 text-white text-decoration-none"
+							>Kids</a
+						>
+						<i class="bi bi-bell-fill mx-4 fs-4 d-none d-sm-block"></i>
+						<img
+							src="/assets/avatar.png"
+							alt="avatar utente"
+							style="height: 50px"
+							class="ms-4"
+						/>
+						<i class="bi bi-caret-down-fill ms-2"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section
+			class="container my-3 flex-column flex-sm-row d-sm-block align-items-center align-items-sm-start"
+		>
+			<div class="row">
+				<div class="text-white col-12 col-sm-6 d-flex flex-column flex-sm-row">
+					<h1 class="fw-bold">TV Shows</h1>
+					<select
+						name="genresSelection"
+						id="genresSelection"
+						class="bg-dark text-white p-2 mx-sm-4 border border-2"
+					>
+						<option value="1">TV Shows</option>
+						<option value="2">Action</option>
+						<option value="3">Horror</option>
+					</select>
+				</div>
+				<div
+					class="text-white col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center my-4"
+				>
+					<i
+						class="bi bi-list border border-2"
+						style="height: 30px; width: 30px"
+					></i>
+					<i
+						class="bi bi-grid-fill border border-2"
+						style="height: 30px; width: 30px"
+					></i>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mt-4">
+			<h2>Trending Now</h2>
+			<div class="row p-0 d-flex flex-nowrap overflow-scroll">
+				<img
+					src="/assets/media/media0.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media1.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media2.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media3.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media4.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media5.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media6.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media7.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+			</div>
+		</section>
+
+		<section class="container mt-4">
+			<h2>Watch It Again</h2>
+			<div class="row p-0 d-flex flex-nowrap overflow-scroll">
+				<img
+					src="/assets/media/media8.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media9.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media10.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media11.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media12.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media13.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media14.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media15.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+			</div>
+		</section>
+
+		<section class="container mt-4">
+			<h2>New Releases</h2>
+			<div class="row p-0 d-flex flex-nowrap overflow-scroll">
+				<img
+					src="/assets/media/media16.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media17.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media18.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media19.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media20.jpg"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media21.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media22.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+				<img
+					src="/assets/media/media23.webp"
+					class="col-6 col-sm-4 col-md-3 col-lg-2"
+					alt=""
+				/>
+			</div>
+		</section>
+
+		<footer class="mt-5 d-flex flex-column align-items-center">
+			<div class="d-flex flex-column">
+				<div>
+					<i class="bi bi-facebook pe-2"></i>
+					<i class="bi bi-instagram pe-2"></i>
+					<i class="bi bi-twitter pe-2"></i>
+					<i class="bi bi-youtube pe-2"></i>
+				</div>
+				<div class="d-flex mt-2">
+					<div class="pe-5">
+						<ul class="p-0">
+							<li>
+								<a href="#" class="text-decoration-none">Audio and Subtitles</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Media Center</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Privacy</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pe-5">
+						<ul class="p-0">
+							<li>
+								<a href="#" class="text-decoration-none">Audio Description</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Investor Relations</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Legal Notices</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pe-5">
+						<ul class="p-0">
+							<li>
+								<a href="#" class="text-decoration-none">Help Center</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Jobs</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Cookie Preferences</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pe-5">
+						<ul class="p-0">
+							<li>
+								<a href="#" class="text-decoration-none">Gift Cards</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">Terms of Use</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none"
+									>Corporate Information</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pe-5 mt-3">
+					<span class="border border-2 p-2">Service code</span>
+				</div>
+				<div class="mt-3">
+					<p>&copy; 1997-2019 Netflix Inc.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

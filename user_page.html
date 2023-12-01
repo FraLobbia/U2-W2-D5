@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/dist/css/style.min.css" />
+		<title>Document</title>
+	</head>
+	<body class="bg-dark text-white">
+		<header class="container p-0">
+			<div class="d-flex align-items-center justify-content-between py-3 row">
+				<!-- @note mx4 mi definisce la larghezza dal bordo per tutti i container -->
+				<!-- struttura -->
+				<div
+					class="d-flex align-items-center justify-content-center justify-content-sm-start col-12 col-sm-8"
+				>
+					<!-- div del logo e navbar, a sinistra -->
+					<img
+						src="/assets/netflix_logo.png"
+						alt="Netflix logo"
+						id="logoNetflix"
+					/>
+				</div>
+			</div>
+		</header>
+		<main class="d-flex justify-content-center">
+			<div id="editProfile" class="container">
+				<h1>Edit Profile</h1>
+				<hr />
+				<div class="row">
+					<div class="col-3">
+						<img src="assets/kids_icon.png" alt="" />
+					</div>
+					<div class="col-9 d-flex flex-column">
+						<input
+							type="text"
+							name="nameUser"
+							id="nameUser"
+							class="border border-0 bg-secondary text-white p-3 w-75"
+						/>
+						<div>
+							<label for="language">Language:</label> <br />
+							<select
+								name="language"
+								id="language"
+								class="bg-dark border border-2 text-white"
+							>
+								<option value="1">Italiano</option>
+								<option value="2">Inglese</option>
+							</select>
+						</div>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
