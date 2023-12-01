@@ -4,17 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/dist/css/style.min.css" />
-		<title>Document</title>
+		<title>Edit Profile</title>
 	</head>
 	<body class="bg-dark text-white">
-		<header class="container p-0">
+		<header class="container">
 			<div class="d-flex align-items-center justify-content-between py-3 row">
-				<!-- @note mx4 mi definisce la larghezza dal bordo per tutti i container -->
-				<!-- struttura -->
 				<div
 					class="d-flex align-items-center justify-content-center justify-content-sm-start col-12 col-sm-8"
 				>
-					<!-- div del logo e navbar, a sinistra -->
 					<img
 						src="/assets/netflix_logo.png"
 						alt="Netflix logo"
@@ -23,34 +20,81 @@
 				</div>
 			</div>
 		</header>
-		<main class="d-flex justify-content-center">
-			<div id="editProfile" class="container">
-				<h1>Edit Profile</h1>
-				<hr />
+
+		<main class="container" style="max-width: 800px">
+			<!-- non ho trovato di meglio che questo max width e ci stavo perdendo troppo tempo, sorry -->
+			<h1>Edit Profile</h1>
+			<hr />
+			<div class="container">
 				<div class="row">
-					<div class="col-3">
-						<img src="assets/kids_icon.png" alt="" />
+					<div class="col-6 col-sm-3">
+						<img src="assets/kids_icon.png" alt="" class="w-100" />
 					</div>
-					<div class="col-9 d-flex flex-column">
+					<div class="col-12 col-sm-9">
 						<input
 							type="text"
 							name="nameUser"
 							id="nameUser"
-							class="border border-0 bg-secondary text-white p-3 w-75"
+							class="border border-0 bg-tertiary text-white p-2 w-75 mt-3 mt-sm-0"
+							placeholder="User name"
 						/>
-						<div>
-							<label for="language">Language:</label> <br />
+						<div class="d-flex flex-column">
+							<label class="fs-3 text-secondary mt-4">Language:</label>
+
 							<select
 								name="language"
 								id="language"
-								class="bg-dark border border-2 text-white"
+								class="bg-dark border border-2 text-white fs-3 my-3 w-75"
 							>
 								<option value="1">Italiano</option>
 								<option value="2">Inglese</option>
 							</select>
 						</div>
 						<hr />
+
+						<div class="d-flex flex-column">
+							<label class="fs-1 text-secondary">Maturity Settings:</label>
+							<span class="bg-secondary p-2 fw-bolder"
+								>ALL MATURITY RATINGS</span
+							>
+							<p class="py-4">
+								Show titles of all maturity ratings for this profile.
+							</p>
+							<button
+								class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+							>
+								edit
+							</button>
+						</div>
+						<hr />
+
+						<div class="d-flex flex-column">
+							<label class="fs-1 text-secondary">Autoplay controls</label>
+							<input type="checkbox" name="" id="" />
+
+							<input type="checkbox" name="" id="" />
+						</div>
 					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="container">
+				<div class="row gx-5">
+					<button
+						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+					>
+						Save
+					</button>
+					<button
+						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+					>
+						cancel
+					</button>
+					<button
+						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+					>
+						delete profile
+					</button>
 				</div>
 			</div>
 		</main>

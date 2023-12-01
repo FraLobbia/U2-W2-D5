@@ -5,16 +5,9 @@
 @import "./bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-// $primary: rgb(255, 0, 153);
-// $secondary: rgb(0, 174, 255);
 
-$card-border-width: 2px;
-// $spacer: 0.5rem;
-$grid-gutter-width: 1rem;
-
-$nav-link-font-size: 30px;
-$nav-link-font-weight: 600;
-$alert-margin-bottom: 0.25rem;
+$dark: black;
+$white: rgb(228, 228, 228);
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "./bootstrap/scss/variables";
@@ -22,10 +15,8 @@ $alert-margin-bottom: 0.25rem;
 // 4. Include any default map overrides here
 
 $custom-theme-colors: (
-	"primary": rgb(255, 0, 153),
-	"secondary": rgb(98, 109, 113),
-	"alt-stefano-light": rgb(220, 255, 124),
-	"alt-stefano-dark": rgb(120, 124, 3),
+	"secondary": rgb(70, 75, 77),
+	"tertiary": rgb(152, 161, 165),
 );
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
@@ -38,9 +29,11 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 //   xxl: 1400px,
 //   xxxl: 1600px
 // );
+
 $spazioIncolonnamento: 30px;
 
 $container-max-widths: (
+	user-config: 800px,
 	xs: calc(400px - $spazioIncolonnamento),
 	sm: calc(576px - $spazioIncolonnamento),
 	md: calc(768px - $spazioIncolonnamento),
