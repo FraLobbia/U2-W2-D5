@@ -8,6 +8,8 @@
 
 $dark: black;
 $white: rgb(228, 228, 228);
+$border-color: white;
+$border-radius: 0;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "./bootstrap/scss/variables";
@@ -68,8 +70,8 @@ $container-max-widths: map-merge($container-max-widths, $giga-max-widths);
 // Layout & components
 @import "./bootstrap/scss/root";
 @import "./bootstrap/scss/reboot";
-// @import "./bootstrap/scss/type";
-// @import "./bootstrap/scss/images";
+@import "./bootstrap/scss/type";
+@import "./bootstrap/scss/images";
 @import "./bootstrap/scss/containers";
 @import "./bootstrap/scss/grid";
 // @import "./bootstrap/scss/tables";
@@ -90,13 +92,13 @@ $container-max-widths: map-merge($container-max-widths, $giga-max-widths);
 @import "./bootstrap/scss/list-group";
 @import "./bootstrap/scss/close";
 // @import "./bootstrap/scss/toasts";
-// @import "./bootstrap/scss/modal";
-// @import "./bootstrap/scss/tooltip";
-// @import "./bootstrap/scss/popover";
+@import "./bootstrap/scss/modal";
+@import "./bootstrap/scss/tooltip";
+@import "./bootstrap/scss/popover";
 @import "./bootstrap/scss/carousel";
 // @import "./bootstrap/scss/spinners";
-// @import "./bootstrap/scss/offcanvas";
-// @import "./bootstrap/scss/placeholders";
+@import "./bootstrap/scss/offcanvas";
+@import "./bootstrap/scss/placeholders";
 
 // Helpers
 @import "./bootstrap/scss/helpers";

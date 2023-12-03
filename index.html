@@ -7,99 +7,116 @@
 		<title>Clone di Netflix</title>
 	</head>
 	<body class="bg-dark text-white">
-		<header class="container-fluid p-0">
-			<div class="container">
-				<div class="d-flex align-items-center justify-content-between py-3 row">
-					<!-- @note mx4 mi definisce la larghezza dal bordo per tutti i container -->
-					<!-- struttura -->
-					<div
-						class="d-flex align-items-center justify-content-center justify-content-sm-start col-12 col-sm-8"
+		<header>
+			<nav class="navbar navbar-dark navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" id="logoNetflix" href="#">
+						<img style="height: 50px" src="/assets/netflix_logo.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler border p-1"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#miaBarraLaterale"
+						aria-controls="offcanvasNavbar"
+						aria-label="Toggle navigation"
 					>
-						<!-- div del logo e navbar, a sinistra -->
-						<img
-							src="/assets/netflix_logo.png"
-							alt="Netflix logo"
-							id="logoNetflix"
-						/>
-						<nav>
-							<ul class="nav navbar-dark">
-								<li class="d-none d-md-block">
-									<a href="#" class="text-decoration-none text-white ms-2"
-										>Home</a
-									>
+						<span class="navbar-toggler-icon fs-6"></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end bg-dark"
+						tabindex="-1"
+						id="miaBarraLaterale"
+						aria-labelledby="offcanvasNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<button
+								type="button"
+								class="btn-close text-bg-danger"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#">Home</a>
 								</li>
-								<li class="d-none d-md-block">
-									<a href="#" class="text-decoration-none text-white ms-5"
-										>TV Shows</a
-									>
+								<li class="nav-item">
+									<a class="nav-link active" href="#">TV Shows</a>
 								</li>
-								<li class="d-none d-lg-block">
-									<a href="#" class="text-decoration-none text-white ms-5"
-										>Movies</a
-									>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Movies</a>
 								</li>
-								<li class="d-none d-xl-block">
-									<a href="#" class="text-decoration-none text-white ms-5"
-										>Recently Added</a
-									>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Recently Added</a>
 								</li>
-								<li class="d-none d-xl-block">
-									<a href="#" class="text-decoration-none text-white ms-5"
-										>My List</a
+								<li class="nav-item dropdown dropdown-menu-dark">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
 									>
+										My List
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li>
+											<a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</li>
+									</ul>
 								</li>
 							</ul>
-						</nav>
-					</div>
-					<div
-						class="d-flex justify-content-center justify-content-sm-end text-white align-items-center col-12 mt-3 mt-sm-0 col-sm-4"
-					>
-						<i class="bi bi-search mx-4 fs-4"></i>
-						<a
-							href="#"
-							class="d-none d-sm-block mb-0 mx-4 text-white text-decoration-none"
-							>Kids</a
-						>
-						<i class="bi bi-bell-fill mx-4 fs-4 d-none d-sm-block"></i>
-						<img
-							src="/assets/avatar.png"
-							alt="avatar utente"
-							style="height: 50px"
-							class="ms-4"
-						/>
-						<i class="bi bi-caret-down-fill ms-2"></i>
+							<div class="nav-item pt-5 pt-lg-0">
+								<i class="bi bi-search px-4"></i>
+								<span>KIDS</span>
+								<i class="bi bi-bell-fill px-4"></i>
+								<img
+									style="height: 35px"
+									src="assets/avatar.png"
+									alt=""
+									class=""
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</nav>
 		</header>
 
 		<section
 			class="container my-3 flex-column flex-sm-row d-sm-block align-items-center align-items-sm-start"
 		>
 			<div class="row">
-				<div class="text-white col-12 col-sm-6 d-flex flex-column flex-sm-row">
+				<div class="text-white col-12 col-sm-8 d-flex flex-column flex-sm-row">
 					<h1 class="fw-bold">TV Shows</h1>
-					<select
-						name="genresSelection"
-						id="genresSelection"
-						class="bg-dark text-white p-2 mx-sm-4 border border-2"
-					>
-						<option value="1">TV Shows</option>
-						<option value="2">Action</option>
-						<option value="3">Horror</option>
-					</select>
+
+					<div class="p-0 ps-sm-5">
+						<select
+							class="form-select bg-dark text-white col-12 col-sm-6 d-flex flex-column flex-sm-row"
+							aria-label="Default select example"
+						>
+							<option selected>Genres</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
 				</div>
+
 				<div
-					class="text-white col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center my-4"
+					class="d-flex col-12 col-sm-4 justify-content-center justify-content-sm-end align-items-baseline mt-2 mt-sm-0"
 				>
-					<i
-						class="bi bi-list border border-2"
-						style="height: 30px; width: 30px"
-					></i>
-					<i
-						class="bi bi-grid-fill border border-2"
-						style="height: 30px; width: 30px"
-					></i>
+					<i class="bi bi-list border px-3 fs-6"></i>
+					<i class="bi bi-grid-fill border px-3 fs-6"></i>
 				</div>
 			</div>
 		</section>
@@ -341,5 +358,15 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
