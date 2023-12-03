@@ -7,44 +7,41 @@
 		<title>Edit Profile</title>
 	</head>
 	<body class="bg-dark text-white">
-		<header class="container">
-			<div class="d-flex align-items-center justify-content-between py-3 row">
-				<div
-					class="d-flex align-items-center justify-content-center justify-content-sm-start col-12 col-sm-8"
-				>
-					<img
-						src="/assets/netflix_logo.png"
-						alt="Netflix logo"
-						id="logoNetflix"
-					/>
+		<header>
+			<nav class="navbar navbar-dark navbar-expand-lg pt-2">
+				<div class="container-fluid">
+					<a class="navbar-brand" id="logoNetflix" href="index.html">
+						<img style="height: 50px" src="/assets/netflix_logo.png" alt="" />
+					</a>
 				</div>
-			</div>
+			</nav>
 		</header>
 
-		<main class="container" style="max-width: 800px">
+		<main class="container-fluid" style="max-width: 800px">
 			<!-- non ho trovato di meglio che questo max width e ci stavo perdendo troppo tempo, sorry -->
 			<h1>Edit Profile</h1>
 			<hr />
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-6 col-sm-3">
 						<img src="assets/kids_icon.png" alt="" class="w-100" />
 					</div>
-					<div class="col-12 col-sm-9">
+					<div class="col-12 col-sm-9 d-flex flex-column">
 						<input
 							type="text"
+							value="Francesco"
 							name="nameUser"
 							id="nameUser"
-							class="border border-0 bg-tertiary text-white p-2 w-75 mt-3 mt-sm-0"
-							placeholder="User name"
+							class="border bg-secondary text-white p-2 w-75 mt-4 mt-sm-0 mb-4"
+							placeholder="Insert your profile name"
 						/>
 						<div class="d-flex flex-column">
-							<label class="fs-3 text-secondary mt-4">Language:</label>
+							<label class="fs-3 text-secondary">Language:</label>
 
 							<select
 								name="language"
 								id="language"
-								class="bg-dark border border-2 text-white fs-3 my-3 w-75"
+								class="bg-dark border border-2 text-white fs-3 w-75"
 							>
 								<option value="1">Italiano</option>
 								<option value="2">Inglese</option>
@@ -54,47 +51,68 @@
 
 						<div class="d-flex flex-column">
 							<label class="fs-1 text-secondary">Maturity Settings:</label>
-							<span class="bg-secondary p-2 fw-bolder"
+							<span
+								class="bg-secondary p-2 fw-bolder btn btn-outline-secondary text-white"
 								>ALL MATURITY RATINGS</span
 							>
 							<p class="py-4">
 								Show titles of all maturity ratings for this profile.
 							</p>
 							<button
-								class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+								class="col-12 col-sm-4 fs-5 btn btn-outline-secondary text-uppercase"
 							>
 								edit
 							</button>
 						</div>
 						<hr />
 
-						<div class="d-flex flex-column">
-							<label class="fs-1 text-secondary">Autoplay controls</label>
-							<input type="checkbox" name="" id="" />
-
-							<input type="checkbox" name="" id="" />
+						<div>
+							<h4 class="text-secondary">Autoplay Controls:</h4>
+							<div class="d-flex align-items-center">
+								<div class="me-2">
+									<input
+										class="form-check-input bg-transparent border-white opacity-50 rounded-0"
+										type="checkbox"
+										checked
+									/>
+								</div>
+								<div>Autoplay next episode in a series on all devices</div>
+							</div>
+							<div class="d-flex align-items-center mt-2">
+								<div class="me-2">
+									<input
+										class="form-check-input bg-transparent border-white opacity-50 rounded-0"
+										type="checkbox"
+										checked
+									/>
+								</div>
+								<div>Autoplay previews while browsing on all devices.</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<hr />
-			<div class="container">
-				<div class="row gx-5">
-					<button
-						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+
+			<div
+				class="action-buttons row pt-2 flex-column flex-md-row align-content-center align-items-baseline gy-4"
+			>
+				<div class="col-auto">
+					<a href="index.html"
+						><button class="btn btn-light px-5">SAVE</button></a
 					>
-						Save
-					</button>
-					<button
-						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+				</div>
+				<div class="col-auto">
+					<a href="index.html"
+						><button class="btn btn-outline-secondary px-5">CANCEL</button></a
 					>
-						cancel
-					</button>
-					<button
-						class="col-12 col-sm-4 fs-4 bg-dark border border-secondary text-secondary py-2 text-uppercase"
+				</div>
+				<div class="col-auto">
+					<a href="index.html"
+						><button class="btn btn-outline-danger px-5">
+							DELETE PROFILE
+						</button></a
 					>
-						delete profile
-					</button>
 				</div>
 			</div>
 		</main>

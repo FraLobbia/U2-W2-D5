@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/dist/css/style.min.css" />
+		<title>Edit Profile</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-dark bg-dark text-white navbar-expand-lg pt-2">
+				<div class="container-fluid">
+					<a class="navbar-brand" id="logoNetflix" href="index.html">
+						<img style="height: 50px" src="/assets/netflix_logo.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler border p-1"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#miaBarraLaterale"
+						aria-controls="offcanvasNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon fs-6"></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end bg-dark"
+						tabindex="-1"
+						id="miaBarraLaterale"
+						aria-labelledby="offcanvasNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<button
+								type="button"
+								class="btn-close text-bg-danger"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">TV Shows</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Movies</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Recently Added</a>
+								</li>
+								<li class="nav-item dropdown dropdown-menu-dark">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										My List
+									</a>
+									<ul class="dropdown-menu dropdown-menu-dark bg-dark border">
+										<li>
+											<a class="dropdown-item" href="#">Film preferiti</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ancora da vedere</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider bg-secondary" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Già visti</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="nav-item pt-5 pt-lg-0 d-flex align-items-center">
+								<i class="bi bi-search px-4"></i>
+								<span>KIDS</span>
+								<i class="bi bi-bell-fill px-4"></i>
+								<span class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<img src="/assets/avatar.png" alt="avatar" width="30" />
+									</a>
+									<ul
+										class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-dark border-secondary"
+									>
+										<li>
+											<a class="dropdown-item" href="./user_page.html"
+												>Profile</a
+											>
+										</li>
+
+										<li>
+											<a class="dropdown-item" href="./settings.html"
+												>Settings</a
+											>
+										</li>
+										<li><hr class="dropdown-divider text-bg-secondary" /></li>
+										<li>
+											<a class="dropdown-item text-danger" href="#">Logout</a>
+										</li>
+									</ul>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main></main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
