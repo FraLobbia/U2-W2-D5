@@ -8,9 +8,10 @@
 
 $dark: black;
 $white: rgb(228, 228, 228);
-$border-color: white;
+$border-color: #6c757d;
 $border-radius: 0;
-
+$dropdown-bg: $dark;
+$container-padding-x: 100px;
 // 3. Include remainder of required Bootstrap stylesheets
 @import "./bootstrap/scss/variables";
 
